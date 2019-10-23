@@ -1,0 +1,144 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+     
+        .border-information {
+            vertical-align: top;
+            border: 1px solid black;
+        }
+
+        .max-cell-size {
+            max-width: 200px;
+            word-break:break-word;
+        }
+
+        .cell-color{
+            background-color: #cce5ff;
+        }
+    </style>
+</head>
+
+
+<body bgcolor="#D3D3D3">
+
+    <center>
+        <br />
+        <h3> CSE 598: Assignment 3 </h3>
+    </center>
+    <table align="center">
+        <tr>
+            <th class="border-information cell-color" colspan="5">This page is deployed at this address : N/A</th>
+        </tr>
+        <tr>
+            <th class="border-information cell-color" colspan="5">Team Name: CSE 598 Team LFG</th>
+        </tr>
+        <tr>
+            <td class="border-information cell-color">Provider Name</td>
+            <td class="border-information cell-color">Service name, with<br>input and output types</td>
+            <td class="border-information cell-color">TryIt link</td>
+            <td class="border-information cell-color">Service Description</td>
+            <td class="border-information cell-color">Planned resources<br>need to implement<br>the service</td>
+        </tr>
+        <!-- Kollen -->
+        <tr>
+            <td class="border-information max-cell-size">Kollen Dillworth</td>
+            <td class="border-information max-cell-size">Weather5Day<br>Input: string zipcode<br>Output: array of string</td>
+            <td class="border-information max-cell-size"><a href="http://localhost:55801/">TryIt Link</a></td>
+            <td class="border-information max-cell-size">Creates a 5 day weather forecase providing the temperature based on the zipcode location.</td>
+            <td class="border-information max-cell-size">Use the api from amdoren weather site at: https://www.amdoren.com/weather-api/ <br> Use Google Geocoder to translate zipcode to lat lng</td>
+        </tr>
+        <tr>
+            <td class="border-information max-cell-size">Kollen Dillworth</td>
+            <td class="border-information max-cell-size">findNearestStore<br>Inputs: string zipcode, <br>string storeName<br>Output: string</td>
+            <td class="border-information max-cell-size"><a href="http://localhost:55801/">TryIt Link</a></td>
+            <td class="border-information max-cell-size">Finds the nearest location of the storeName in the zipcode area code within 20 miles. Provides store name and address.</td>
+            <td class="border-information max-cell-size">Use Google geocoder to tranlsate zipcode to lat lng and Google Text Search API to search for store name within the area of the lat lng</td>
+        </tr>
+        <tr>
+            <td class="border-information max-cell-size">Kollen Dillworth</td>
+            <td class="border-information max-cell-size">CreateAccount<br>Inputs: string username<br>string password<br> Output: string</td>
+            <td class="border-information max-cell-size"><!--<a href="">TryIt Link</a>--> N/A</td>
+            <td class="border-information max-cell-size">Allows users to register with a username and password</td>
+            <td class="border-information max-cell-size">Write my own code and use local component to implement service. Use encryption service to encrypt users password and custom validation on password to be added into json file</td>
+        </tr>
+        <tr>
+            <td class="border-information max-cell-size">Kollen Dillworth</td>
+            <td class="border-information max-cell-size">AirportLocator<br>Input: string airportName<br>Output: string</td>
+            <td class="border-information max-cell-size"><!--<a href="">TryIt Link</a>--> N/A</td>
+            <td class="border-information max-cell-size">Allows user to search for airport and returns a verified address along with the rating of that airport</td>
+            <td class="border-information max-cell-size">Write my own code and lookup functionality to an xml file of airports which will then be verified with Google Places API if airport exists.</td>
+        </tr>
+        <!-- Nate -->
+        <tr>
+            <td class="border-information max-cell-size">Nate Smith</td>
+            <td class="border-information max-cell-size">Top10Words<br>Input: string url<br>Output: array of string</td>
+            <td class="border-information max-cell-size"><!--<a href="">TryIt Link</a>--> N/A</td>
+            <td class="border-information max-cell-size">Analyzes webpage at a given url and returns the ten most frequently occured words in webpage.</td>
+            <td class="border-information max-cell-size">Uses third-party library HtmlAgilityPack to parse text, then standard data structurs to count the words.</td>
+        </tr>
+        <tr>
+            <td class="border-information max-cell-size">Nate Smith</td>
+            <td class="border-information max-cell-size">WordFilter<br>Input: string str<br>Output: string</td>
+            <td class="border-information max-cell-size"><!--<a href="">TryIt Link</a>--> N/A</td>
+            <td class="border-information max-cell-size">Analyzes a string of words and filter out the functions words that are not meaningful</td>
+            <td class="border-information max-cell-size">Uses regular expressions and a hashset of function words to filter.</td>
+        </tr>
+        <tr>
+            <td class="border-information max-cell-size">Nate Smith</td>
+            <td class="border-information max-cell-size">CalculateDistance<br>Inputs: string airport1, <br>string airport2 <br> Output: double distance</td>
+            <td class="border-information max-cell-size"><!--<a href="">TryIt Link</a>--> N/A</td>
+            <td class="border-information max-cell-size">Calculates the physic distance between two airports, given their airport codes.</td>
+            <td class="border-information max-cell-size">Using latitude and longitude data obtained from openflights.org stored in XML.</td>
+        </tr>
+        <tr>
+            <td class="border-information max-cell-size">Nate Smith</td>
+            <td class="border-information max-cell-size">FindShortestPath<br>Input: <br>Output: </td>
+            <td class="border-information max-cell-size"><!--<a href="">TryIt Link</a>--> N/A</td>
+            <td class="border-information max-cell-size">Find the path between two airports with the least number of connections.</td>
+            <td class="border-information max-cell-size">Using data on airline flight routes obtained from openflights.org stored in XML.</td>
+        </tr>
+        <!-- Calvin -->
+        <tr>
+            <td class="border-information max-cell-size">Calvin Giles</td>
+            <td class="border-information max-cell-size">WsdlAddress<br>Input: string url<br>Output: array of string</td>
+            <td class="border-information max-cell-size"><!--<a href="">TryIt Link</a>--> N/A</td>
+            <td class="border-information max-cell-size">Analyzes a webpage and returns all WSDL addresses in that webpage</td>
+            <td class="border-information max-cell-size">Wrote my own code to parse through a web page and extract WSDL addresses</td>
+        </tr>
+        <tr>
+            <td class="border-information max-cell-size">Calvin Giles</td>
+            <td class="border-information max-cell-size">WindIntensity<br>Inputs: double latitude, <br> double longitude<br>Output: double</td>
+            <td class="border-information max-cell-size"><!--<a href="">TryIt Link</a>--> N/A</td>
+            <td class="border-information max-cell-size">Allows users to input lat and lng and returns annual average wind index</td>
+            <td class="border-information max-cell-size">Used an api from https://power.larc.nasa.gov/ to find the data</td>
+        </tr>
+        <tr>
+            <td class="border-information max-cell-size">Calvin Giles</td>
+            <td class="border-information max-cell-size">SearchAirport<br>Input: string city<br> Output: string airportName</td>
+            <td class="border-information max-cell-size"><!--<a href="">TryIt Link</a>--> N/A</td>
+            <td class="border-information max-cell-size">Returns a list of airports given the name of city</td>
+            <td class="border-information max-cell-size">wrote my own code and data structures to query an XML file from openflights.org</td>
+        </tr>
+        <tr>
+            <td class="border-information max-cell-size">Calvin Giles</td>
+            <td class="border-information max-cell-size">FindAirlinesByRoute<br>Inputs: string origin, string destination<br><br>Output: string airline</td>
+            <td class="border-information max-cell-size"><!--<a href="">TryIt Link</a>--> N/A</td>
+            <td class="border-information max-cell-size">Finds airlines that travel a specific route and returns the desired list</td>
+            <td class="border-information max-cell-size">Use own code to write a lookup function to retrieve data from XML file</td>
+        </tr>
+        <tr>
+            <td class="border-information max-cell-size">Calvin Giles</td>
+            <td class="border-information max-cell-size">FindAirlinesById<br>Input: airlineId<br>Output: airlineName</td>
+            <td class="border-information max-cell-size"><!--<a href="">TryIt Link</a>--> N/A</td>
+            <td class="border-information max-cell-size">Validates user entry and searches an airport database by id returns the make and model of aircraft</td>
+            <td class="border-information max-cell-size">Use own code to write a lookup function to retrieve data from XML file</td>
+        </tr>
+    </table>
+    <br><br>
+</body>
+
+</html>
