@@ -15,6 +15,24 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TryIt", "TryIt\TryIt.csproj
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Nate", "Nate", "{8A1D40AF-8B4A-4184-8072-5501D8969409}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "XML", "XML", "{C0D95CF8-3B41-4241-8882-A75F26A116DD}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\..\..\Downloads\openflightsxml\openflightsxml\airlines.xml = ..\..\..\..\Downloads\openflightsxml\openflightsxml\airlines.xml
+		..\..\..\..\Downloads\openflightsxml\openflightsxml\airports.xml = ..\..\..\..\Downloads\openflightsxml\openflightsxml\airports.xml
+		..\..\..\..\Downloads\openflightsxml\openflightsxml\planes.xml = ..\..\..\..\Downloads\openflightsxml\openflightsxml\planes.xml
+		..\..\..\..\Downloads\openflightsxml\openflightsxml\routes.xml = ..\..\..\..\Downloads\openflightsxml\openflightsxml\routes.xml
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DistanceBetweenAirports", "DistanceBetweenAirports\DistanceBetweenAirports.csproj", "{CE0BC9CC-C87B-4CD7-84E4-2981148B85D8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFormsApp1", "WindowsFormsApp1\WindowsFormsApp1.csproj", "{62D26057-DDEA-4F56-AC43-86A7106BCA23}"
+	ProjectSection(ProjectDependencies) = postProject
+		{07D4C396-64B6-4BEB-B8B3-D0599B19D8C0} = {07D4C396-64B6-4BEB-B8B3-D0599B19D8C0}
+		{CE0BC9CC-C87B-4CD7-84E4-2981148B85D8} = {CE0BC9CC-C87B-4CD7-84E4-2981148B85D8}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FewestConnections", "FewestConnections\FewestConnections.csproj", "{07D4C396-64B6-4BEB-B8B3-D0599B19D8C0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +51,18 @@ Global
 		{B6EB57C4-1199-4E32-B995-8D31101E4B7D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B6EB57C4-1199-4E32-B995-8D31101E4B7D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B6EB57C4-1199-4E32-B995-8D31101E4B7D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CE0BC9CC-C87B-4CD7-84E4-2981148B85D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CE0BC9CC-C87B-4CD7-84E4-2981148B85D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CE0BC9CC-C87B-4CD7-84E4-2981148B85D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CE0BC9CC-C87B-4CD7-84E4-2981148B85D8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{62D26057-DDEA-4F56-AC43-86A7106BCA23}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{62D26057-DDEA-4F56-AC43-86A7106BCA23}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{62D26057-DDEA-4F56-AC43-86A7106BCA23}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{62D26057-DDEA-4F56-AC43-86A7106BCA23}.Release|Any CPU.Build.0 = Release|Any CPU
+		{07D4C396-64B6-4BEB-B8B3-D0599B19D8C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{07D4C396-64B6-4BEB-B8B3-D0599B19D8C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{07D4C396-64B6-4BEB-B8B3-D0599B19D8C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{07D4C396-64B6-4BEB-B8B3-D0599B19D8C0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -41,6 +71,9 @@ Global
 		{572904A0-12F9-485F-830A-700F361D9113} = {8A1D40AF-8B4A-4184-8072-5501D8969409}
 		{44F8FE9D-298E-4644-BB0B-8509052564BA} = {8A1D40AF-8B4A-4184-8072-5501D8969409}
 		{B6EB57C4-1199-4E32-B995-8D31101E4B7D} = {8A1D40AF-8B4A-4184-8072-5501D8969409}
+		{CE0BC9CC-C87B-4CD7-84E4-2981148B85D8} = {8A1D40AF-8B4A-4184-8072-5501D8969409}
+		{62D26057-DDEA-4F56-AC43-86A7106BCA23} = {8A1D40AF-8B4A-4184-8072-5501D8969409}
+		{07D4C396-64B6-4BEB-B8B3-D0599B19D8C0} = {8A1D40AF-8B4A-4184-8072-5501D8969409}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B15FD200-02BF-4C98-837F-E367F8ED9D30}
