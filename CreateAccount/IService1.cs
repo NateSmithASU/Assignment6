@@ -6,7 +6,7 @@ using System.ServiceModel;
 using System.ServiceModel.Web;
 using System.Text;
 
-namespace NearestStore
+namespace CreateAccount
 {
     // NOTE: You can use the "Rename" command on the "Refactor" menu to change the interface name "IService1" in both code and config file together.
     [ServiceContract]
@@ -14,8 +14,9 @@ namespace NearestStore
     {
 
         [OperationContract]
-        string findNearestStore(string zipcode, string storeName);
+        string CreateAccount(string username, string password);
 
+        // TODO: Add your service operations here
     }
-
+    
 }

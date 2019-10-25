@@ -6,12 +6,12 @@
     <ProductVersion>
     </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{8615EE0A-8DE8-48B1-96E6-60B14DBCE90E}</ProjectGuid>
+    <ProjectGuid>{CE22041B-25D3-47B5-9F0C-5F0E7372F30A}</ProjectGuid>
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>NearestStore</RootNamespace>
-    <AssemblyName>NearestStore</AssemblyName>
+    <RootNamespace>CreateAccount</RootNamespace>
+    <AssemblyName>CreateAccount</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <WcfConfigValidationEnabled>True</WcfConfigValidationEnabled>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -64,20 +64,23 @@
     <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Connected Services\EncryptionService\configuration91.svcinfo" />
+    <None Include="Connected Services\EncryptionService\configuration.svcinfo" />
+    <None Include="Connected Services\EncryptionService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
     <Content Include="Service1.svc" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Models\AddressComponents.cs" />
-    <Compile Include="Models\BoundsLocationModel.cs" />
-    <Compile Include="Models\BoundsModel.cs" />
-    <Compile Include="Models\Candidates.cs" />
-    <Compile Include="Models\GeometryModel.cs" />
-    <Compile Include="Models\GoogleResponse.cs" />
-    <Compile Include="Models\GoogleResult.cs" />
-    <Compile Include="Models\LocationModel.cs" />
-    <Compile Include="Models\NearestStoreResponse.cs" />
-    <Compile Include="Models\ViewPortModel.cs" />
+    <Compile Include="Connected Services\EncryptionService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Account.cs" />
+    <Compile Include="Models\Register.cs" />
     <Compile Include="Service1.svc.cs">
       <DependentUpon>Service1.svc</DependentUpon>
     </Compile>
@@ -88,6 +91,14 @@
     <Folder Include="App_Data\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="accounts.json" />
+    <None Include="Connected Services\EncryptionService\Service.wsdl" />
+    <None Include="Connected Services\EncryptionService\Service.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\EncryptionService\Service1.xsd">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -95,6 +106,12 @@
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Connected Services\EncryptionService\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
@@ -109,9 +126,9 @@
         <WebProjectProperties>
           <UseIIS>True</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>61430</DevelopmentServerPort>
+          <DevelopmentServerPort>60525</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:61430/</IISUrl>
+          <IISUrl>http://localhost:60525/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>
